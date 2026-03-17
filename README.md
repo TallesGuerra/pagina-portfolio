@@ -1,6 +1,6 @@
 # Talles Guerra — Portfolio
 
-Portfolio pessoal de Talles Guerra, Dev Mobile Android baseado em Lisboa, Portugal.
+Developer com background fullstack em transição para **Mobile Android**, especializado em Kotlin e Jetpack Compose. Baseado em Lisboa, Portugal — aberto a estágio ou posição júnior.
 
 **[🔗 Ver online](https://tallesguerra.github.io/pagina-portfolio)** <!-- substitui pelo teu URL real -->
 
