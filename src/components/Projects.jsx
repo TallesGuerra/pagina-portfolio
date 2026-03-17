@@ -108,8 +108,8 @@ export default function Projects() {
           <div className="project-card">
             <div className="project-num">02 ——</div>
             <div className="project-name">Lista de Tarefas</div>
-            <div className="mini-preview" style={{ background: '#6a1fd0' }}>
-              <svg viewBox="0 0 100 130" width="80" xmlns="http://www.w3.org/2000/svg">
+            <div className="mini-preview" style={{ background: '#0d0d0d', padding: '0.5rem', minHeight: '220px' }}>
+              <svg viewBox="0 0 90 180" width="90" xmlns="http://www.w3.org/2000/svg">
                 <defs>
                   <linearGradient id="todoGrad" x1="0" y1="0" x2="0" y2="1">
                     <stop offset="0%" stopColor="#7c3aed"/>
@@ -117,27 +117,35 @@ export default function Projects() {
                   </linearGradient>
                 </defs>
                 {/* Phone shell */}
-                <rect x="3" y="1" width="94" height="128" rx="10" fill="#111"/>
+                <rect x="2" y="1" width="86" height="178" rx="12" fill="#111"/>
                 {/* Screen with gradient */}
-                <rect x="6" y="4" width="88" height="122" rx="8" fill="url(#todoGrad)"/>
+                <rect x="5" y="4" width="80" height="172" rx="10" fill="url(#todoGrad)"/>
+                {/* Notch */}
+                <rect x="30" y="7" width="30" height="6" rx="3" fill="#111"/>
+                {/* Status bar icons */}
+                <text x="10" y="13" fontFamily="sans-serif" fontSize="4" fill="rgba(255,255,255,0.7)">7:53</text>
+                <rect x="68" y="9" width="12" height="5" rx="1.5" fill="rgba(255,255,255,0.5)"/>
+                <rect x="69" y="10" width="10" height="3" rx="1" fill="#fff"/>
                 {/* Title */}
-                <text x="12" y="18" fontFamily="sans-serif" fontSize="8" fontWeight="bold" fill="#fff">Lista de Tarefas</text>
+                <text x="10" y="28" fontFamily="sans-serif" fontSize="9" fontWeight="bold" fill="#fff">Lista de Tarefas</text>
                 {/* Input field */}
-                <rect x="10" y="24" width="58" height="13" rx="4" fill="rgba(255,255,255,0.18)" stroke="rgba(255,255,255,0.4)" strokeWidth="0.5"/>
-                <text x="15" y="33.5" fontFamily="sans-serif" fontSize="6" fill="rgba(255,255,255,0.6)">Nova tarefa</text>
+                <rect x="8" y="33" width="52" height="14" rx="4" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.5)" strokeWidth="0.8"/>
+                <text x="12" y="43" fontFamily="sans-serif" fontSize="5.5" fill="rgba(255,255,255,0.55)">Nova tarefa</text>
                 {/* Add button */}
-                <rect x="72" y="24" width="20" height="13" rx="6" fill="#fff"/>
-                <text x="82" y="33.5" fontFamily="sans-serif" fontSize="6" fontWeight="bold" fill="#7c3aed" textAnchor="middle">Add</text>
+                <rect x="64" y="33" width="18" height="14" rx="7" fill="#fff"/>
+                <text x="73" y="43" fontFamily="sans-serif" fontSize="6" fontWeight="bold" fill="#7c3aed" textAnchor="middle">Add</text>
                 {/* Task card 1 */}
-                <rect x="10" y="43" width="80" height="16" rx="4" fill="rgba(255,255,255,0.22)"/>
-                <text x="16" y="54" fontFamily="sans-serif" fontSize="6" fill="#fff">Iniciar novo projeto</text>
-                <text x="85" y="54" fontFamily="sans-serif" fontSize="8" fill="#f87171" textAnchor="middle">🗑</text>
+                <rect x="8" y="53" width="74" height="16" rx="5" fill="rgba(255,255,255,0.88)"/>
+                <text x="14" y="64" fontFamily="sans-serif" fontSize="6" fill="#1a1a2e">Iniciar novo projeto</text>
+                <rect x="73" y="57" width="6" height="8" rx="1" fill="#ef4444"/>
+                <text x="76" y="64" fontFamily="sans-serif" fontSize="5.5" fill="#fff" textAnchor="middle">🗑</text>
                 {/* Task card 2 */}
-                <rect x="10" y="63" width="80" height="16" rx="4" fill="rgba(255,255,255,0.22)"/>
-                <text x="16" y="74" fontFamily="sans-serif" fontSize="6" fill="#fff">Fazer compras</text>
-                <text x="85" y="74" fontFamily="sans-serif" fontSize="8" fill="#f87171" textAnchor="middle">🗑</text>
+                <rect x="8" y="73" width="74" height="16" rx="5" fill="rgba(255,255,255,0.88)"/>
+                <text x="14" y="84" fontFamily="sans-serif" fontSize="6" fill="#1a1a2e">Fazer compras da semana</text>
+                <rect x="73" y="77" width="6" height="8" rx="1" fill="#ef4444"/>
+                <text x="76" y="84" fontFamily="sans-serif" fontSize="5.5" fill="#fff" textAnchor="middle">🗑</text>
                 {/* Home bar */}
-                <rect x="35" y="119" width="30" height="2.5" rx="1.25" fill="rgba(255,255,255,0.4)"/>
+                <rect x="30" y="169" width="30" height="2.5" rx="1.25" fill="rgba(255,255,255,0.4)"/>
               </svg>
             </div>
             <div className="project-desc">App de gestão de tarefas com Compose. Estado reativo, adicionar e remover tarefas com layout responsivo.</div>
@@ -156,27 +164,34 @@ export default function Projects() {
             <div className="project-badge badge-client">● Cliente real</div>
             <div className="project-num">03 ——</div>
             <div className="project-name">Barbearia Cruz</div>
-            <div className="mini-preview" style={{ background: 'linear-gradient(135deg,#fff7ed,#fef3ee)' }}>
-              <svg viewBox="0 0 180 100" width="100%" xmlns="http://www.w3.org/2000/svg">
-                <rect width="180" height="100" rx="5" fill="#fff"/>
-                <rect width="180" height="20" rx="5" fill="#f3f4f6"/>
-                <rect y="15" width="180" height="5" fill="#f3f4f6"/>
-                <circle cx="12" cy="10" r="3.5" fill="#ef4444"/>
-                <circle cx="22" cy="10" r="3.5" fill="#f59e0b"/>
-                <circle cx="32" cy="10" r="3.5" fill="#10b981"/>
-                <rect x="42" y="5" width="96" height="10" rx="3" fill="#e5e7eb"/>
-                <text x="90" y="13" fontFamily="sans-serif" fontSize="5.5" fill="#9ca3af" textAnchor="middle">barbearia-cruz.vercel.app</text>
-                <rect x="8" y="27" width="164" height="22" rx="3" fill="#1a1714"/>
-                <text x="90" y="41" fontFamily="sans-serif" fontSize="8.5" fontWeight="bold" fill="#fff" textAnchor="middle">BARBEARIA CRUZ</text>
-                <text x="90" y="57" fontFamily="sans-serif" fontSize="6" fill="#6b7280" textAnchor="middle">Agende o seu corte online · Lisboa</text>
-                <rect x="60" y="62" width="60" height="12" rx="2" fill="#e8440a"/>
-                <text x="90" y="71" fontFamily="sans-serif" fontSize="6" fill="#fff" textAnchor="middle">Agendar agora →</text>
-                <rect x="8" y="80" width="50" height="14" rx="2" fill="#f9fafb" stroke="#e5e7eb" strokeWidth="0.5"/>
-                <text x="33" y="90" fontFamily="sans-serif" fontSize="5.5" fill="#374151" textAnchor="middle">Corte simples</text>
-                <rect x="65" y="80" width="50" height="14" rx="2" fill="#f9fafb" stroke="#e5e7eb" strokeWidth="0.5"/>
-                <text x="90" y="90" fontFamily="sans-serif" fontSize="5.5" fill="#374151" textAnchor="middle">Barba</text>
-                <rect x="122" y="80" width="50" height="14" rx="2" fill="#f9fafb" stroke="#e5e7eb" strokeWidth="0.5"/>
-                <text x="147" y="90" fontFamily="sans-serif" fontSize="5.5" fill="#374151" textAnchor="middle">Corte + Barba</text>
+            <div className="mini-preview" style={{ background: '#111', padding: '0', overflow: 'hidden', borderRadius: '6px' }}>
+              <svg viewBox="0 0 200 130" width="100%" xmlns="http://www.w3.org/2000/svg">
+                {/* Background dark */}
+                <rect width="200" height="130" fill="#1a1714"/>
+                {/* Navbar */}
+                <rect width="200" height="18" fill="#111"/>
+                <circle cx="9" cy="9" r="3" fill="#333"/>
+                <text x="14" y="12.5" fontFamily="sans-serif" fontSize="5" fontWeight="bold" fill="#f5c518">Barber Shop</text>
+                <text x="105" y="12.5" fontFamily="sans-serif" fontSize="4.5" fill="#ccc" textAnchor="middle">Início</text>
+                <text x="130" y="12.5" fontFamily="sans-serif" fontSize="4.5" fill="#ccc" textAnchor="middle">Serviços</text>
+                <text x="156" y="12.5" fontFamily="sans-serif" fontSize="4.5" fill="#ccc" textAnchor="middle">Agendar</text>
+                <text x="182" y="12.5" fontFamily="sans-serif" fontSize="4.5" fill="#ccc" textAnchor="middle">Contacto</text>
+                {/* Hero overlay dark */}
+                <rect y="18" width="200" height="112" fill="rgba(0,0,0,0.65)"/>
+                {/* Barber tools silhouette hints */}
+                <ellipse cx="160" cy="80" rx="28" ry="28" fill="rgba(255,255,255,0.04)"/>
+                <ellipse cx="40" cy="100" rx="22" ry="15" fill="rgba(255,255,255,0.04)"/>
+                {/* Center badge circle */}
+                <circle cx="100" cy="62" r="18" fill="rgba(150,150,150,0.3)"/>
+                <text x="100" y="65" fontFamily="sans-serif" fontSize="6" fill="#f5c518" textAnchor="middle" fontStyle="italic">Barber Shop</text>
+                {/* Main title */}
+                <text x="100" y="86" fontFamily="sans-serif" fontSize="13" fontWeight="bold" fill="#fff" textAnchor="middle">Barber</text>
+                <text x="142" y="86" fontFamily="sans-serif" fontSize="13" fontWeight="bold" fill="#f5c518" textAnchor="start"> Shop</text>
+                {/* Subtitle */}
+                <text x="100" y="98" fontFamily="sans-serif" fontSize="5.5" fill="#ccc" textAnchor="middle">Estilo e qualidade para o homem moderno</text>
+                {/* CTA button */}
+                <rect x="66" y="104" width="68" height="16" rx="8" fill="#f5c518"/>
+                <text x="100" y="115.5" fontFamily="sans-serif" fontSize="6" fontWeight="bold" fill="#111" textAnchor="middle">Agendar Horário</text>
               </svg>
             </div>
             <div className="project-desc">Sistema de agendamento para cliente real em Portugal com integração ao Google Calendar e design mobile-first.</div>
