@@ -108,23 +108,36 @@ export default function Projects() {
           <div className="project-card">
             <div className="project-num">02 ——</div>
             <div className="project-name">Lista de Tarefas</div>
-            <div className="mini-preview" style={{ background: 'linear-gradient(135deg,#eff6ff,#e0e7ff)' }}>
-              <svg viewBox="0 0 100 110" width="80" xmlns="http://www.w3.org/2000/svg">
-                <rect x="4" y="2" width="92" height="106" rx="10" fill="#1e293b"/>
-                <rect x="7" y="5" width="86" height="100" rx="8" fill="#f8fafc"/>
-                <text x="50" y="22" fontFamily="sans-serif" fontSize="8" fontWeight="bold" fill="#1e293b" textAnchor="middle">Minhas Tarefas</text>
-                <rect x="12" y="28" width="76" height="12" rx="3" fill="#2563eb"/>
-                <text x="50" y="38" fontFamily="sans-serif" fontSize="7" fill="#fff" textAnchor="middle">+ Adicionar tarefa</text>
-                <rect x="8" y="46" width="4" height="9" rx="1" fill="#2563eb"/>
-                <text x="18" y="54" fontFamily="sans-serif" fontSize="7" fill="#374151">Estudar Coroutines</text>
-                <rect x="8" y="60" width="4" height="9" rx="1" fill="#2563eb"/>
-                <text x="18" y="68" fontFamily="sans-serif" fontSize="7" fill="#374151">Criar novo projeto</text>
-                <rect x="8" y="74" width="4" height="9" rx="1" fill="#059669"/>
-                <line x1="18" y1="79" x2="75" y2="79" stroke="#a7f3d0" strokeWidth="1.5"/>
-                <text x="18" y="82" fontFamily="sans-serif" fontSize="7" fill="#9ca3af" textDecoration="line-through">Ler docs Material 3</text>
-                <rect x="8" y="88" width="4" height="9" rx="1" fill="#059669"/>
-                <line x1="18" y1="93" x2="65" y2="93" stroke="#a7f3d0" strokeWidth="1.5"/>
-                <text x="18" y="96" fontFamily="sans-serif" fontSize="7" fill="#9ca3af">Push no GitHub</text>
+            <div className="mini-preview" style={{ background: '#6a1fd0' }}>
+              <svg viewBox="0 0 100 130" width="80" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="todoGrad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stopColor="#7c3aed"/>
+                    <stop offset="100%" stopColor="#06b6d4"/>
+                  </linearGradient>
+                </defs>
+                {/* Phone shell */}
+                <rect x="3" y="1" width="94" height="128" rx="10" fill="#111"/>
+                {/* Screen with gradient */}
+                <rect x="6" y="4" width="88" height="122" rx="8" fill="url(#todoGrad)"/>
+                {/* Title */}
+                <text x="12" y="18" fontFamily="sans-serif" fontSize="8" fontWeight="bold" fill="#fff">Lista de Tarefas</text>
+                {/* Input field */}
+                <rect x="10" y="24" width="58" height="13" rx="4" fill="rgba(255,255,255,0.18)" stroke="rgba(255,255,255,0.4)" strokeWidth="0.5"/>
+                <text x="15" y="33.5" fontFamily="sans-serif" fontSize="6" fill="rgba(255,255,255,0.6)">Nova tarefa</text>
+                {/* Add button */}
+                <rect x="72" y="24" width="20" height="13" rx="6" fill="#fff"/>
+                <text x="82" y="33.5" fontFamily="sans-serif" fontSize="6" fontWeight="bold" fill="#7c3aed" textAnchor="middle">Add</text>
+                {/* Task card 1 */}
+                <rect x="10" y="43" width="80" height="16" rx="4" fill="rgba(255,255,255,0.22)"/>
+                <text x="16" y="54" fontFamily="sans-serif" fontSize="6" fill="#fff">Iniciar novo projeto</text>
+                <text x="85" y="54" fontFamily="sans-serif" fontSize="8" fill="#f87171" textAnchor="middle">🗑</text>
+                {/* Task card 2 */}
+                <rect x="10" y="63" width="80" height="16" rx="4" fill="rgba(255,255,255,0.22)"/>
+                <text x="16" y="74" fontFamily="sans-serif" fontSize="6" fill="#fff">Fazer compras</text>
+                <text x="85" y="74" fontFamily="sans-serif" fontSize="8" fill="#f87171" textAnchor="middle">🗑</text>
+                {/* Home bar */}
+                <rect x="35" y="119" width="30" height="2.5" rx="1.25" fill="rgba(255,255,255,0.4)"/>
               </svg>
             </div>
             <div className="project-desc">App de gestão de tarefas com Compose. Estado reativo, adicionar e remover tarefas com layout responsivo.</div>
