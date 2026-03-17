@@ -92,7 +92,7 @@ export default function Projects() {
             </div>
             <div className="project-links">
               <a href="https://barbearia-cruz.vercel.app" target="_blank" rel="noreferrer" className="project-link">
-                <ExternalIcon /> Ver live
+                <ExternalIcon /> Ver online
               </a>
             </div>
           </div>

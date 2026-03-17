@@ -21,7 +21,7 @@ const skillCategories = [
     ],
   },
   {
-    name: 'Dados & Storage',
+    name: 'Dados & Armazenamento',
     tags: [
       { label: 'Room Database' },
       { label: 'Repository Pattern' },
