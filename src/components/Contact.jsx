@@ -1,8 +1,10 @@
 import { useState } from 'react'
+import t from '../i18n'
 
-export default function Contact() {
+export default function Contact({ lang }) {
   const [submitted, setSubmitted] = useState(false)
   const [error, setError] = useState(false)
+  const tr = t[lang].contact
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -30,29 +32,29 @@ export default function Contact() {
   return (
     <section id="contact">
       <div className="container">
-        <div className="section-label"><span>04</span> · Contacto</div>
-        <h2 className="section-title reveal">Vamos <em>conversar?</em></h2>
+        <div className="section-label"><span>04</span> · {tr.label}</div>
+        <h2 className="section-title reveal">{tr.title}<em>{tr.titleEm}</em></h2>
         <div className="contact-grid">
           <div className="reveal">
-            <p>Estou aberto a oportunidades como Dev Mobile Android — estágio, júnior, ou projetos freelance. Preenche o formulário ou fala comigo diretamente.</p>
+            <p>{tr.intro}</p>
             <form className="contact-form" onSubmit={handleSubmit}>
               <div className="form-row">
                 <div className="form-group">
-                  <label className="form-label">Nome</label>
-                  <input type="text" name="nome" className="form-input" placeholder="O teu nome" required />
+                  <label className="form-label">{tr.labelName}</label>
+                  <input type="text" name="nome" className="form-input" placeholder={tr.placeholderName} required />
                 </div>
                 <div className="form-group">
-                  <label className="form-label">Email</label>
-                  <input type="email" name="email" className="form-input" placeholder="email@exemplo.com" required />
+                  <label className="form-label">{tr.labelEmail}</label>
+                  <input type="email" name="email" className="form-input" placeholder="email@example.com" required />
                 </div>
               </div>
               <div className="form-group">
-                <label className="form-label">Assunto</label>
-                <input type="text" name="assunto" className="form-input" placeholder="Oportunidade, projeto, colaboração..." />
+                <label className="form-label">{tr.labelSubject}</label>
+                <input type="text" name="assunto" className="form-input" placeholder={tr.placeholderSubject} />
               </div>
               <div className="form-group">
-                <label className="form-label">Mensagem</label>
-                <textarea name="mensagem" className="form-textarea" placeholder="Conta-me mais sobre o que tens em mente..." required />
+                <label className="form-label">{tr.labelMessage}</label>
+                <textarea name="mensagem" className="form-textarea" placeholder={tr.placeholderMessage} required />
               </div>
               <button
                 type="submit"
@@ -60,9 +62,9 @@ export default function Contact() {
                 disabled={submitted}
                 style={submitted ? { background: 'var(--accent3)' } : error ? { background: '#e05c5c' } : {}}
               >
-                {submitted ? 'Mensagem enviada ✓' : error ? 'Erro ao enviar. Tenta novamente.' : (
+                {submitted ? tr.sent : error ? tr.error : (
                   <>
-                    Enviar mensagem{' '}
+                    {tr.send}{' '}
                     <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                       <line x1="22" y1="2" x2="11" y2="13" /><polygon points="22 2 15 22 11 13 2 9 22 2" />
                     </svg>
@@ -97,7 +99,7 @@ export default function Contact() {
               </a>
             </div>
             <div className="contact-note">
-              <p>Respondo normalmente em menos de 24h. Se fores recruiter, podes enviar a descrição da vaga diretamente.</p>
+              <p>{tr.note}</p>
             </div>
           </div>
         </div>

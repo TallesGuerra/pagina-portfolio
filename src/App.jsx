@@ -13,10 +13,18 @@ export default function App() {
     return localStorage.getItem('theme') === 'dark'
   })
 
+  const [lang, setLang] = useState(() => {
+    return localStorage.getItem('lang') || 'pt'
+  })
+
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', darkMode ? 'dark' : 'light')
     localStorage.setItem('theme', darkMode ? 'dark' : 'light')
   }, [darkMode])
+
+  useEffect(() => {
+    localStorage.setItem('lang', lang)
+  }, [lang])
 
   useEffect(() => {
     const obs = new IntersectionObserver(
@@ -34,16 +42,18 @@ export default function App() {
     return () => obs.disconnect()
   }, [])
 
+  const toggleLang = () => setLang(l => l === 'pt' ? 'en' : 'pt')
+
   return (
     <>
       <Cursor />
-      <Navbar darkMode={darkMode} toggleDark={() => setDarkMode(d => !d)} />
-      <Hero />
-      <About />
-      <Projects />
-      <Experience />
-      <Contact />
-      <Footer />
+      <Navbar darkMode={darkMode} toggleDark={() => setDarkMode(d => !d)} lang={lang} toggleLang={toggleLang} />
+      <Hero lang={lang} />
+      <About lang={lang} />
+      <Projects lang={lang} />
+      <Experience lang={lang} />
+      <Contact lang={lang} />
+      <Footer lang={lang} />
     </>
   )
 }

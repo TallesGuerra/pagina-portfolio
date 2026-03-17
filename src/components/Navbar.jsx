@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import t from '../i18n'
 
 const SunIcon = () => (
   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -20,9 +21,10 @@ const MoonIcon = () => (
   </svg>
 )
 
-export default function Navbar({ darkMode, toggleDark }) {
+export default function Navbar({ darkMode, toggleDark, lang, toggleLang }) {
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
+  const tr = t[lang].nav
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40)
@@ -37,16 +39,23 @@ export default function Navbar({ darkMode, toggleDark }) {
       <nav id="navbar" className={scrolled ? 'scrolled' : ''}>
         <a href="#hero" className="nav-logo">Talles<span>.</span></a>
         <ul className="nav-links">
-          <li><a href="#about">Sobre</a></li>
-          <li><a href="#projects">Projetos</a></li>
-          <li><a href="#experience">Experiência</a></li>
-          <li><a href="#contact">Contacto</a></li>
+          <li><a href="#about">{tr.about}</a></li>
+          <li><a href="#projects">{tr.projects}</a></li>
+          <li><a href="#experience">{tr.experience}</a></li>
+          <li><a href="#contact">{tr.contact}</a></li>
         </ul>
         <div className="nav-right">
           <button
+            className="lang-toggle"
+            onClick={toggleLang}
+            aria-label="Toggle language"
+          >
+            {lang === 'pt' ? 'EN' : 'PT'}
+          </button>
+          <button
             className="theme-toggle"
             onClick={toggleDark}
-            aria-label={darkMode ? 'Mudar para modo claro' : 'Mudar para modo escuro'}
+            aria-label={darkMode ? 'Switch to light mode' : 'Switch to dark mode'}
           >
             {darkMode ? <SunIcon /> : <MoonIcon />}
           </button>
@@ -61,10 +70,10 @@ export default function Navbar({ darkMode, toggleDark }) {
       </nav>
       {open && (
         <div className="mobile-menu">
-          <a href="#about" onClick={close}>Sobre</a>
-          <a href="#projects" onClick={close}>Projetos</a>
-          <a href="#experience" onClick={close}>Experiência</a>
-          <a href="#contact" onClick={close}>Contacto</a>
+          <a href="#about" onClick={close}>{tr.about}</a>
+          <a href="#projects" onClick={close}>{tr.projects}</a>
+          <a href="#experience" onClick={close}>{tr.experience}</a>
+          <a href="#contact" onClick={close}>{tr.contact}</a>
         </div>
       )}
     </>

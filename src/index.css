@@ -66,6 +66,8 @@ nav.scrolled { background: rgba(244,239,230,.93); backdrop-filter: blur(20px); b
 .nav-right { display: flex; align-items: center; gap: .75rem; }
 .theme-toggle { display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; background: none; border: 1.5px solid var(--border); border-radius: 2px; color: var(--muted); cursor: pointer; transition: color .2s, border-color .2s; }
 .theme-toggle:hover { color: var(--ink); border-color: var(--ink); }
+.lang-toggle { display: flex; align-items: center; justify-content: center; height: 32px; padding: 0 .55rem; background: none; border: 1.5px solid var(--border); border-radius: 2px; color: var(--muted); cursor: pointer; font-family: var(--mono); font-size: .7rem; letter-spacing: .06em; transition: color .2s, border-color .2s; }
+.lang-toggle:hover { color: var(--ink); border-color: var(--ink); }
 
 /* HERO */
 #hero { min-height: 100vh; display: grid; grid-template-columns: 1fr 400px; align-items: center; gap: 4rem; padding: 7rem 3rem 4rem; position: relative; overflow: hidden; max-width: 1160px; margin: 0 auto; }
