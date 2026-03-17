@@ -42,7 +42,7 @@ export default function Projects() {
           </div>
           <div className="project-featured-preview">
             <img
-              src="/financas-preview.png"
+              src={`${import.meta.env.BASE_URL}financas-preview.png`}
               alt="Pocket Finances preview"
               className="phone-mockup"
               style={{ width: '160px', height: 'auto' }}
@@ -58,7 +58,7 @@ export default function Projects() {
             <div className="project-name">Lista de Tarefas</div>
             <div className="mini-preview" style={{ padding: 0, overflow: 'hidden' }}>
               <img
-                src="/toDoList-preview.png"
+                src={`${import.meta.env.BASE_URL}toDoList-preview.png`}
                 alt="Lista de Tarefas preview"
                 style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
               />
@@ -81,7 +81,7 @@ export default function Projects() {
             <div className="project-name">Barber Shop</div>
             <div className="mini-preview" style={{ padding: 0, overflow: 'hidden' }}>
               <img
-                src="/barbearia-preview.png"
+                src={`${import.meta.env.BASE_URL}barbearia-preview.png`}
                 alt="Barber Shop preview"
                 style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
               />
