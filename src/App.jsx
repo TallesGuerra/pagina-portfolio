@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import Cursor from './components/Cursor'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
@@ -9,6 +9,15 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 
 export default function App() {
+  const [darkMode, setDarkMode] = useState(() => {
+    return localStorage.getItem('theme') === 'dark'
+  })
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', darkMode ? 'dark' : 'light')
+    localStorage.setItem('theme', darkMode ? 'dark' : 'light')
+  }, [darkMode])
+
   useEffect(() => {
     const obs = new IntersectionObserver(
       (entries) => {
@@ -28,7 +37,7 @@ export default function App() {
   return (
     <>
       <Cursor />
-      <Navbar />
+      <Navbar darkMode={darkMode} toggleDark={() => setDarkMode(d => !d)} />
       <Hero />
       <About />
       <Projects />
