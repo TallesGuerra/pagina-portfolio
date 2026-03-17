@@ -76,7 +76,7 @@ export default function Projects() {
 
           {/* Barbearia Cruz */}
           <div className="project-card">
-            <div className="project-badge badge-client">● Cliente real</div>
+            <div className="project-badge badge-case">◆ Estudo de caso</div>
             <div className="project-num">03 ——</div>
             <div className="project-name">Barber Shop</div>
             <div className="mini-preview" style={{ padding: 0, overflow: 'hidden' }}>
