@@ -40,11 +40,11 @@ export default function Hero({ lang }) {
           <div className="avatar-body">
             <div className="avatar-stat-row">
               <div className="avatar-stat">
-                <div className="avatar-stat-val">4+</div>
+                <div className="avatar-stat-val">8+</div>
                 <div className="avatar-stat-lab">{tr.statProjects}</div>
               </div>
               <div className="avatar-stat">
-                <div className="avatar-stat-val">1</div>
+                <div className="avatar-stat-val">5+</div>
                 <div className="avatar-stat-lab">{tr.statClient}</div>
               </div>
               <div className="avatar-stat">

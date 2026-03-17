@@ -15,7 +15,7 @@ const translations = {
       cta: 'Ver projetos',
       ctaGhost: 'Entrar em contacto',
       statProjects: 'Projetos',
-      statClient: 'Cliente',
+      statClient: 'Tecnologias',
       available: '● Disponível',
     },
     about: {
@@ -126,7 +126,7 @@ const translations = {
       cta: 'See projects',
       ctaGhost: 'Get in touch',
       statProjects: 'Projects',
-      statClient: 'Client',
+      statClient: 'Technologies',
       available: '● Available',
     },
     about: {
