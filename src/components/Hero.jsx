@@ -32,13 +32,7 @@ export default function Hero({ lang }) {
         <div className="avatar-card">
           <div className="avatar-top">
             <div className="avatar-img">
-              <svg viewBox="0 0 88 88" xmlns="http://www.w3.org/2000/svg" width="88" height="88">
-                <rect width="88" height="88" fill="#e8dfd0" />
-                <ellipse cx="44" cy="76" rx="28" ry="18" fill="#c5b99e" />
-                <circle cx="44" cy="35" r="20" fill="#c8956c" />
-                <path d="M24 28 Q44 8 64 28 L64 20 Q44 4 24 20Z" fill="#2d1f14" />
-                <ellipse cx="44" cy="21" rx="21" ry="11" fill="#2d1f14" />
-              </svg>
+              <img src={`${import.meta.env.BASE_URL}perfilGithub.png`} alt="Talles Guerra" style={{ width: '88px', height: '88px', objectFit: 'cover', borderRadius: '50%' }} />
             </div>
             <div className="avatar-name">Talles Guerra</div>
             <div className="avatar-role">Android Dev · Kotlin · Compose</div>
