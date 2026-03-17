@@ -1,8 +1,12 @@
-export default function Footer() {
+import t from '../i18n'
+
+export default function Footer({ lang }) {
+  const tr = t[lang].footer
+
   return (
     <footer>
-      <p>© 2026 <a href="#">Talles Guerra</a> — Dev Mobile Android · Lisboa, Portugal</p>
-      <p>Feito com Kotlin no coração &amp; <a href="https://github.com/TallesGuerra">código aberto</a></p>
+      <p>© 2026 <a href="#">Talles Guerra</a> — {tr.tagline}</p>
+      <p dangerouslySetInnerHTML={{ __html: tr.made }} />
     </footer>
   )
 }

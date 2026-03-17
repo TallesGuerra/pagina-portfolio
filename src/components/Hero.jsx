@@ -1,4 +1,8 @@
-export default function Hero() {
+import t from '../i18n'
+
+export default function Hero({ lang }) {
+  const tr = t[lang].hero
+
   return (
     <section id="hero">
       <div className="hero-bg-shape" />
@@ -6,25 +10,22 @@ export default function Hero() {
       <div>
         <div className="hero-eyebrow">
           <span className="hero-eyebrow-dot" />
-          Disponível para oportunidades · Portugal
+          {tr.eyebrow}
         </div>
         <h1 className="hero-h1">
-          Dev Mobile<br />
-          <em>Android</em> que<br />
-          <span className="ul">entrega.</span>
+          {tr.h1Line1}<br />
+          <em>{tr.h1Line2}</em><br />
+          <span className="ul">{tr.h1Line3}</span>
         </h1>
-        <p className="hero-desc">
-          Olá, sou <strong>Talles Guerra</strong> — construo apps Android nativos com Kotlin e Jetpack Compose.
-          Código limpo, arquitetura sólida, resultados reais.
-        </p>
+        <p className="hero-desc" dangerouslySetInnerHTML={{ __html: tr.desc }} />
         <div className="hero-cta">
           <a href="#projects" className="btn-primary">
-            Ver projetos{' '}
+            {tr.cta}{' '}
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
               <line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" />
             </svg>
           </a>
-          <a href="#contact" className="btn-ghost">Entrar em contacto</a>
+          <a href="#contact" className="btn-ghost">{tr.ctaGhost}</a>
         </div>
       </div>
       <div className="hero-right">
@@ -46,11 +47,11 @@ export default function Hero() {
             <div className="avatar-stat-row">
               <div className="avatar-stat">
                 <div className="avatar-stat-val">4+</div>
-                <div className="avatar-stat-lab">Projetos</div>
+                <div className="avatar-stat-lab">{tr.statProjects}</div>
               </div>
               <div className="avatar-stat">
                 <div className="avatar-stat-val">1</div>
-                <div className="avatar-stat-lab">Cliente</div>
+                <div className="avatar-stat-lab">{tr.statClient}</div>
               </div>
               <div className="avatar-stat">
                 <div className="avatar-stat-val">PT</div>
@@ -58,7 +59,7 @@ export default function Hero() {
               </div>
             </div>
             <div className="avatar-tags">
-              <span className="avatar-tag green">● Disponível</span>
+              <span className="avatar-tag green">{tr.available}</span>
               <span className="avatar-tag red">Kotlin</span>
               <span className="avatar-tag">Jetpack Compose</span>
               <span className="avatar-tag">MVVM</span>
