@@ -2,14 +2,29 @@ import { useState } from 'react'
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false)
+  const [error, setError] = useState(false)
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    setSubmitted(true)
-    setTimeout(() => {
-      setSubmitted(false)
-      e.target.reset()
-    }, 3000)
+    const form = e.target
+    try {
+      const res = await fetch('https://formspree.io/f/mlgpobvj', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: new FormData(form),
+      })
+      if (res.ok) {
+        setSubmitted(true)
+        form.reset()
+        setTimeout(() => setSubmitted(false), 4000)
+      } else {
+        setError(true)
+        setTimeout(() => setError(false), 4000)
+      }
+    } catch {
+      setError(true)
+      setTimeout(() => setError(false), 4000)
+    }
   }
 
   return (
@@ -24,28 +39,28 @@ export default function Contact() {
               <div className="form-row">
                 <div className="form-group">
                   <label className="form-label">Nome</label>
-                  <input type="text" className="form-input" placeholder="O teu nome" required />
+                  <input type="text" name="nome" className="form-input" placeholder="O teu nome" required />
                 </div>
                 <div className="form-group">
                   <label className="form-label">Email</label>
-                  <input type="email" className="form-input" placeholder="email@exemplo.com" required />
+                  <input type="email" name="email" className="form-input" placeholder="email@exemplo.com" required />
                 </div>
               </div>
               <div className="form-group">
                 <label className="form-label">Assunto</label>
-                <input type="text" className="form-input" placeholder="Oportunidade, projeto, colaboração..." />
+                <input type="text" name="assunto" className="form-input" placeholder="Oportunidade, projeto, colaboração..." />
               </div>
               <div className="form-group">
                 <label className="form-label">Mensagem</label>
-                <textarea className="form-textarea" placeholder="Conta-me mais sobre o que tens em mente..." required />
+                <textarea name="mensagem" className="form-textarea" placeholder="Conta-me mais sobre o que tens em mente..." required />
               </div>
               <button
                 type="submit"
                 className="form-submit"
                 disabled={submitted}
-                style={submitted ? { background: 'var(--accent3)' } : {}}
+                style={submitted ? { background: 'var(--accent3)' } : error ? { background: '#e05c5c' } : {}}
               >
-                {submitted ? 'Mensagem enviada ✓' : (
+                {submitted ? 'Mensagem enviada ✓' : error ? 'Erro ao enviar. Tenta novamente.' : (
                   <>
                     Enviar mensagem{' '}
                     <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
