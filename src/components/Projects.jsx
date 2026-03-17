@@ -41,38 +41,63 @@ export default function Projects() {
             </div>
           </div>
           <div className="project-featured-preview">
-            <svg className="phone-mockup" viewBox="0 0 160 300" xmlns="http://www.w3.org/2000/svg">
-              <rect x="8" y="4" width="144" height="292" rx="22" fill="#1a1714"/>
-              <rect x="12" y="8" width="136" height="284" rx="19" fill="#f8f9fa"/>
-              <rect x="12" y="8" width="136" height="36" rx="19" fill="#f8f9fa"/>
-              <rect x="12" y="36" width="136" height="8" fill="#f8f9fa"/>
-              <rect x="52" y="12" width="56" height="14" rx="7" fill="#1a1714"/>
-              <rect x="20" y="52" width="120" height="54" rx="8" fill="#1a1714"/>
-              <text x="80" y="70" fontFamily="sans-serif" fontSize="8" fill="#9ca3af" textAnchor="middle">Saldo total</text>
-              <text x="80" y="90" fontFamily="sans-serif" fontSize="15" fontWeight="bold" fill="#ffffff" textAnchor="middle">€ 1.840,00</text>
-              <rect x="20" y="114" width="56" height="38" rx="6" fill="#e8f5f0"/>
-              <text x="48" y="128" fontFamily="sans-serif" fontSize="6.5" fill="#059669" textAnchor="middle">Receitas</text>
-              <text x="48" y="143" fontFamily="sans-serif" fontSize="10" fontWeight="bold" fill="#059669" textAnchor="middle">+€2.400</text>
-              <rect x="84" y="114" width="56" height="38" rx="6" fill="#fef0ea"/>
-              <text x="112" y="128" fontFamily="sans-serif" fontSize="6.5" fill="#e8440a" textAnchor="middle">Despesas</text>
-              <text x="112" y="143" fontFamily="sans-serif" fontSize="10" fontWeight="bold" fill="#e8440a" textAnchor="middle">-€560</text>
-              <line x1="20" y1="160" x2="140" y2="160" stroke="#e5e7eb" strokeWidth="1"/>
-              <circle cx="26" cy="173" r="5" fill="#e8f5f0"/>
-              <text x="36" y="177" fontFamily="sans-serif" fontSize="7.5" fill="#374151">Supermercado</text>
-              <text x="138" y="177" fontFamily="sans-serif" fontSize="7.5" fill="#e8440a" textAnchor="end">-€42</text>
-              <line x1="20" y1="185" x2="140" y2="185" stroke="#e5e7eb" strokeWidth="1"/>
-              <circle cx="26" cy="198" r="5" fill="#e8f5f0"/>
-              <text x="36" y="202" fontFamily="sans-serif" fontSize="7.5" fill="#374151">Salário</text>
-              <text x="138" y="202" fontFamily="sans-serif" fontSize="7.5" fill="#059669" textAnchor="end">+€1.200</text>
-              <line x1="20" y1="210" x2="140" y2="210" stroke="#e5e7eb" strokeWidth="1"/>
-              <circle cx="26" cy="223" r="5" fill="#fef0ea"/>
-              <text x="36" y="227" fontFamily="sans-serif" fontSize="7.5" fill="#374151">Restaurante</text>
-              <text x="138" y="227" fontFamily="sans-serif" fontSize="7.5" fill="#e8440a" textAnchor="end">-€28</text>
-              <rect x="12" y="256" width="136" height="36" fill="#fff"/>
-              <circle cx="48" cy="274" r="7" fill="#1a1714"/>
-              <circle cx="80" cy="274" r="7" fill="#e5e7eb"/>
-              <circle cx="112" cy="274" r="7" fill="#e5e7eb"/>
-              <rect x="55" y="288" width="50" height="3" rx="1.5" fill="#d1d5db"/>
+            <svg className="phone-mockup" viewBox="0 0 160 320" xmlns="http://www.w3.org/2000/svg">
+              {/* Phone shell */}
+              <rect x="6" y="2" width="148" height="316" rx="24" fill="#111"/>
+              <rect x="10" y="6" width="140" height="308" rx="21" fill="#eeeaf8"/>
+
+              {/* Notch */}
+              <rect x="50" y="10" width="60" height="13" rx="6.5" fill="#111"/>
+
+              {/* Header */}
+              <text x="18" y="38" fontFamily="sans-serif" fontSize="8.5" fontWeight="bold" fill="#0f0c29">Finanças no Bolso</text>
+              <text x="142" y="38" fontFamily="sans-serif" fontSize="6.5" fill="#3b3bd4" textAnchor="end">Ver tudo →</text>
+
+              {/* Balance card */}
+              <rect x="14" y="44" width="132" height="72" rx="12" fill="#2e2ea8"/>
+
+              {/* Saldo atual label */}
+              <text x="24" y="59" fontFamily="sans-serif" fontSize="6.5" fill="#b8b8f0">Saldo atual</text>
+
+              {/* Balance amount */}
+              <text x="24" y="78" fontFamily="sans-serif" fontSize="17" fontWeight="bold" fill="#ffffff">3 800,00 €</text>
+
+              {/* Divider inside card */}
+              <line x1="24" y1="87" x2="136" y2="87" stroke="#4a4ac0" strokeWidth="0.8"/>
+
+              {/* Receitas */}
+              <text x="24" y="99" fontFamily="sans-serif" fontSize="6" fill="#86efac">▲ Receitas</text>
+              <text x="24" y="109" fontFamily="sans-serif" fontSize="8" fontWeight="bold" fill="#4ade80">5 000,00 €</text>
+
+              {/* Despesas */}
+              <text x="88" y="99" fontFamily="sans-serif" fontSize="6" fill="#fca5a5">▼ Despesas</text>
+              <text x="88" y="109" fontFamily="sans-serif" fontSize="8" fontWeight="bold" fill="#f87171">1 200,00 €</text>
+
+              {/* Transactions label */}
+              <text x="18" y="132" fontFamily="sans-serif" fontSize="7.5" fontWeight="bold" fill="#0f0c29">Transações recentes</text>
+
+              {/* Transaction 1 – Salário */}
+              <rect x="14" y="139" width="132" height="34" rx="8" fill="#ddd9f0"/>
+              <circle cx="31" cy="156" r="8" fill="#bbf7d0"/>
+              <text x="31" y="159.5" fontFamily="sans-serif" fontSize="9" fill="#166534" textAnchor="middle">↑</text>
+              <text x="45" y="152" fontFamily="sans-serif" fontSize="7" fontWeight="bold" fill="#1a1a2e">Salário</text>
+              <text x="45" y="163" fontFamily="sans-serif" fontSize="6" fill="#6b7280">Trabalho · Hoje</text>
+              <text x="140" y="157" fontFamily="sans-serif" fontSize="7" fontWeight="bold" fill="#16a34a" textAnchor="end">+5 000,00 €</text>
+
+              {/* Transaction 2 – Aluguel */}
+              <rect x="14" y="179" width="132" height="34" rx="8" fill="#ddd9f0"/>
+              <circle cx="31" cy="196" r="8" fill="#fee2e2"/>
+              <text x="31" y="199.5" fontFamily="sans-serif" fontSize="9" fill="#991b1b" textAnchor="middle">↓</text>
+              <text x="45" y="192" fontFamily="sans-serif" fontSize="7" fontWeight="bold" fill="#1a1a2e">Aluguel</text>
+              <text x="45" y="203" fontFamily="sans-serif" fontSize="6" fill="#6b7280">Moradia · Ontem</text>
+              <text x="140" y="197" fontFamily="sans-serif" fontSize="7" fontWeight="bold" fill="#dc2626" textAnchor="end">-1 200,00 €</text>
+
+              {/* FAB button */}
+              <rect x="113" y="276" width="30" height="30" rx="10" fill="#2e2ea8"/>
+              <text x="128" y="295" fontFamily="sans-serif" fontSize="16" fontWeight="bold" fill="#fff" textAnchor="middle">+</text>
+
+              {/* Home bar */}
+              <rect x="55" y="308" width="50" height="3" rx="1.5" fill="#9994c0"/>
             </svg>
           </div>
         </div>
