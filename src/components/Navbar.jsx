@@ -37,7 +37,7 @@ export default function Navbar({ darkMode, toggleDark, lang, toggleLang }) {
   return (
     <>
       <nav id="navbar" className={scrolled ? 'scrolled' : ''}>
-        <a href="#hero" className="nav-logo">Talles<span>.</span></a>
+        <a href="#hero" className="nav-logo"><span className="logo-light">Talles</span><span className="logo-guerra">Guerra</span></a>
         <ul className="nav-links">
           <li><a href="#about">{tr.about}</a></li>
           <li><a href="#projects">{tr.projects}</a></li>
