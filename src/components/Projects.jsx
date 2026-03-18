@@ -65,10 +65,12 @@ export default function Projects({ lang }) {
             <div className="project-desc" style={{ maxWidth: 400 }}>
               {tr.items[2].desc}
             </div>
-         {['React','Vite','Express','Google Calendar API','Vercel'].map(t => (
-  <span key={t} className="tech-chip">{t}</span>
-))}
-            <div className="project-links">
+            <div className="project-tech" style={{ marginBottom: '1.4rem' }}>
+                  {['React','Vite','Express','Google Calendar API','Vercel'].map(t => (
+                  <span key={t} className="tech-chip">{t}</span>
+                ))}
+              </div>
+              <div className="project-links">
               <a href="https://barbearia-cruz.vercel.app" target="_blank" rel="noreferrer" className="project-link">
                 <ExternalIcon /> {tr.liveBtn}
               </a>
