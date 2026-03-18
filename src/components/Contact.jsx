@@ -35,7 +35,7 @@ export default function Contact({ lang }) {
         <div className="section-label"><span>04</span> · {tr.label}</div>
         <h2 className="section-title reveal">{tr.title}<em>{tr.titleEm}</em></h2>
         <div className="contact-grid">
-          <div className="reveal">
+          <div className="contact-left reveal">
             <p>{tr.intro}</p>
             <form className="contact-form" onSubmit={handleSubmit}>
               <div className="form-row">
