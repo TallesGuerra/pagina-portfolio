@@ -57,7 +57,7 @@ export default function Projects({ lang }) {
         {/* 02 — Barber Shop: full row */}
         <div className="project-featured project-featured-barber reveal">
           <div className="project-featured-body">
-            <div className="project-badge badge-client">{tr.badgeClient}</div>
+        {/*     <div className="project-badge badge-client">{tr.badgeClient}</div> */}
             <div className="project-num">02 ——</div>
             <div className="project-name" style={{ fontFamily: "'Fraunces',serif", fontSize: '1.55rem', marginBottom: '.7rem' }}>
               {tr.items[2].name}
