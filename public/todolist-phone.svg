@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 410">
+  <!-- Phone shell -->
+  <rect x="2" y="2" width="196" height="406" rx="28" fill="#1a1714"/>
+  <!-- Screen -->
+  <rect x="10" y="10" width="180" height="390" rx="20" fill="#f4efe6"/>
+  <!-- Dynamic island -->
+  <rect x="72" y="15" width="56" height="13" rx="6.5" fill="#1a1714"/>
+  <!-- Status bar time -->
+  <text x="100" y="38" font-family="sans-serif" font-size="8" fill="#1a1714" text-anchor="middle" font-weight="600">9:41</text>
+
+  <!-- Header bar -->
+  <rect x="10" y="46" width="180" height="46" fill="#e8440a"/>
+  <!-- Header title -->
+  <text x="100" y="73" font-family="sans-serif" font-size="13" font-weight="700" fill="white" text-anchor="middle">Lista de Tarefas</text>
+  <text x="100" y="85" font-family="sans-serif" font-size="7" fill="rgba(255,255,255,0.7)" text-anchor="middle">4 tarefas · 2 concluídas</text>
+
+  <!-- Task 1 - checked -->
+  <rect x="18" y="102" width="164" height="38" rx="5" fill="white" opacity="0.9"/>
+  <rect x="26" y="111" width="16" height="16" rx="4" fill="#059669"/>
+  <text x="34" y="122" font-family="sans-serif" font-size="9" fill="white" text-anchor="middle" font-weight="700">✓</text>
+  <text x="52" y="123" font-family="sans-serif" font-size="9.5" fill="#8a8178" text-decoration="line-through">Comprar mantimentos</text>
+
+  <!-- Task 2 - checked -->
+  <rect x="18" y="146" width="164" height="38" rx="5" fill="white" opacity="0.9"/>
+  <rect x="26" y="155" width="16" height="16" rx="4" fill="#059669"/>
+  <text x="34" y="166" font-family="sans-serif" font-size="9" fill="white" text-anchor="middle" font-weight="700">✓</text>
+  <text x="52" y="167" font-family="sans-serif" font-size="9.5" fill="#8a8178" text-decoration="line-through">Estudar Kotlin</text>
+
+  <!-- Divider label -->
+  <text x="18" y="198" font-family="sans-serif" font-size="7.5" fill="#8a8178" letter-spacing="1">A FAZER</text>
+
+  <!-- Task 3 - pending -->
+  <rect x="18" y="205" width="164" height="38" rx="5" fill="white"/>
+  <rect x="26" y="214" width="16" height="16" rx="4" fill="none" stroke="#d0c9c0" stroke-width="1.5"/>
+  <text x="52" y="227" font-family="sans-serif" font-size="9.5" fill="#1a1714">Terminar portfólio</text>
+
+  <!-- Task 4 - pending -->
+  <rect x="18" y="249" width="164" height="38" rx="5" fill="white"/>
+  <rect x="26" y="258" width="16" height="16" rx="4" fill="none" stroke="#d0c9c0" stroke-width="1.5"/>
+  <text x="52" y="271" font-family="sans-serif" font-size="9.5" fill="#1a1714">Fazer code review</text>
+
+  <!-- Task 5 - pending -->
+  <rect x="18" y="293" width="164" height="38" rx="5" fill="white"/>
+  <rect x="26" y="302" width="16" height="16" rx="4" fill="none" stroke="#d0c9c0" stroke-width="1.5"/>
+  <text x="52" y="315" font-family="sans-serif" font-size="9.5" fill="#1a1714">Ir ao ginásio</text>
+
+  <!-- FAB -->
+  <circle cx="166" cy="356" r="22" fill="#e8440a" opacity="0.95"/>
+  <text x="166" y="362" font-family="sans-serif" font-size="22" fill="white" text-anchor="middle" dominant-baseline="middle">+</text>
+
+  <!-- Bottom home bar -->
+  <rect x="76" y="382" width="48" height="4" rx="2" fill="#1a1714" opacity="0.18"/>
+</svg>

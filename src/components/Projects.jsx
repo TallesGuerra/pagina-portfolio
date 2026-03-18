@@ -22,7 +22,7 @@ export default function Projects({ lang }) {
         <div className="section-label"><span>02</span> · {tr.label}</div>
         <h2 className="section-title reveal">{tr.title}<em>{tr.titleEm}</em></h2>
 
-        {/* Featured */}
+        {/* 01 — Pocket Finance: full row featured */}
         <div className="project-featured reveal">
           <div className="project-featured-body">
             <div className="project-badge badge-featured">{tr.badge}</div>
@@ -54,45 +54,21 @@ export default function Projects({ lang }) {
           </div>
         </div>
 
-        {/* Secondary cards */}
-        <div className="projects-secondary reveal">
-          {/* To Do List */}
-          <div className="project-card">
-            <div className="project-num">02 ——</div>
-            <div className="project-name">{tr.items[1].name}</div>
-            <div className="mini-preview" style={{ padding: 0, overflow: 'hidden' }}>
-              <img
-                src={`${import.meta.env.BASE_URL}toDoList-preview.png`}
-                alt="To-Do List preview"
-                style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
-              />
-            </div>
-            <div className="project-desc">{tr.items[1].desc}</div>
-            <div className="project-tech">
-              {['Kotlin','Jetpack Compose','Material 3'].map(t => <span key={t} className="tech-chip">{t}</span>)}
-            </div>
-            <div className="project-links">
-              <a href="https://github.com/TallesGuerra/ListaDeTarefas" target="_blank" rel="noreferrer" className="project-link">
-                <GitHubIcon /> {tr.githubShort}
-              </a>
-            </div>
-          </div>
-
-          {/* Barbearia Cruz */}
-          <div className="project-card">
+        {/* 02 — Barber Shop: full row */}
+        <div className="project-featured project-featured-barber reveal">
+          <div className="project-featured-body">
             <div className="project-badge badge-case">{tr.badgeCase}</div>
-            <div className="project-num">03 ——</div>
-            <div className="project-name">{tr.items[2].name}</div>
-            <div className="mini-preview" style={{ padding: 0, overflow: 'hidden' }}>
-              <img
-                src={`${import.meta.env.BASE_URL}barbearia-preview.png`}
-                alt="Barber Shop preview"
-                style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
-              />
+            <div className="project-num">02 ——</div>
+            <div className="project-name" style={{ fontFamily: "'Fraunces',serif", fontSize: '1.55rem', marginBottom: '.7rem' }}>
+              {tr.items[2].name}
             </div>
-            <div className="project-desc">{tr.items[2].desc}</div>
-            <div className="project-tech">
-              {['JavaScript','Google Calendar API','Vercel'].map(t => <span key={t} className="tech-chip">{t}</span>)}
+            <div className="project-desc" style={{ maxWidth: 400 }}>
+              {tr.items[2].desc}
+            </div>
+            <div className="project-tech" style={{ marginBottom: '1.4rem' }}>
+              {['JavaScript','Google Calendar API','Vercel'].map(t => (
+                <span key={t} className="tech-chip">{t}</span>
+              ))}
             </div>
             <div className="project-links">
               <a href="https://barbearia-cruz.vercel.app" target="_blank" rel="noreferrer" className="project-link">
@@ -100,41 +76,72 @@ export default function Projects({ lang }) {
               </a>
             </div>
           </div>
+          <div className="project-featured-preview project-featured-preview-barber">
+            <img
+              src={`${import.meta.env.BASE_URL}barbearia-preview.png`}
+              alt="Barber Shop preview"
+              style={{ width: '200px', height: 'auto', borderRadius: '6px', boxShadow: '0 16px 40px rgba(26,23,20,.15)' }}
+            />
+          </div>
+        </div>
 
+        {/* 03 & 04 — Quiz + ToDoList: 2 colunas com phone-mockup */}
+        <div className="projects-duo reveal">
           {/* Quiz App */}
-          <div className="project-card">
-            <div className="project-num">04 ——</div>
-            <div className="project-name">{tr.items[3].name}</div>
-            <div className="mini-preview" style={{ background: 'linear-gradient(135deg,#f5f0ff,#ede8ff)' }}>
-              <svg viewBox="0 0 100 110" width="80" xmlns="http://www.w3.org/2000/svg">
-                <rect x="4" y="2" width="92" height="106" rx="10" fill="#1a1714"/>
-                <rect x="7" y="5" width="86" height="100" rx="8" fill="#1e1b4b"/>
-                <text x="50" y="22" fontFamily="sans-serif" fontSize="8" fontWeight="bold" fill="#e0e7ff" textAnchor="middle">Quiz Android</text>
-                <text x="50" y="32" fontFamily="sans-serif" fontSize="6" fill="#818cf8" textAnchor="middle">Question 3 of 10</text>
-                <rect x="12" y="36" width="76" height="28" rx="4" fill="#312e81"/>
-                <text x="50" y="47" fontFamily="sans-serif" fontSize="5.5" fill="#c7d2fe" textAnchor="middle">Which language is used in</text>
-                <text x="50" y="57" fontFamily="sans-serif" fontSize="5.5" fill="#c7d2fe" textAnchor="middle">modern native Android?</text>
-                <rect x="12" y="70" width="34" height="13" rx="3" fill="#4c1d95"/>
-                <text x="29" y="80" fontFamily="sans-serif" fontSize="6" fill="#ddd6fe" textAnchor="middle">Java</text>
-                <rect x="54" y="70" width="34" height="13" rx="3" fill="#059669"/>
-                <text x="71" y="80" fontFamily="sans-serif" fontSize="6" fill="#fff" textAnchor="middle">Kotlin ✓</text>
-                <rect x="12" y="88" width="34" height="13" rx="3" fill="#4c1d95"/>
-                <text x="29" y="98" fontFamily="sans-serif" fontSize="6" fill="#ddd6fe" textAnchor="middle">Swift</text>
-                <rect x="54" y="88" width="34" height="13" rx="3" fill="#4c1d95"/>
-                <text x="71" y="98" fontFamily="sans-serif" fontSize="6" fill="#ddd6fe" textAnchor="middle">Python</text>
-              </svg>
+          <div className="project-duo-card">
+            <div style={{ width: '100%' }}>
+              <div className="project-num">03 ——</div>
+              <div className="project-name">{tr.items[3].name}</div>
             </div>
-            <div className="project-desc">{tr.items[3].desc}</div>
-            <div className="project-tech">
-              {['Kotlin','Jetpack Compose','Android SDK'].map(t => <span key={t} className="tech-chip">{t}</span>)}
+            <div className="project-duo-preview">
+              <img
+                src={`${import.meta.env.BASE_URL}quiz-phone.svg`}
+                alt="Quiz App preview"
+                className="phone-mockup"
+                style={{ width: '130px' }}
+              />
             </div>
-            <div className="project-links">
-              <a href="https://github.com/TallesGuerra" target="_blank" rel="noreferrer" className="project-link">
-                <GitHubIcon /> {tr.githubShort}
-              </a>
+            <div style={{ width: '100%' }}>
+              <div className="project-desc">{tr.items[3].desc}</div>
+              <div className="project-tech">
+                {['Kotlin','Jetpack Compose','Android SDK'].map(t => <span key={t} className="tech-chip">{t}</span>)}
+              </div>
+              <div className="project-links">
+                <a href="https://github.com/TallesGuerra" target="_blank" rel="noreferrer" className="project-link">
+                  <GitHubIcon /> {tr.githubShort}
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* To Do List */}
+          <div className="project-duo-card">
+            <div style={{ width: '100%' }}>
+              <div className="project-num">04 ——</div>
+              <div className="project-name">{tr.items[1].name}</div>
+            </div>
+            <div className="project-duo-preview">
+              <img
+                src={`${import.meta.env.BASE_URL}todolist-phone.svg`}
+                alt="To-Do List preview"
+                className="phone-mockup"
+                style={{ width: '130px' }}
+              />
+            </div>
+            <div style={{ width: '100%' }}>
+              <div className="project-desc">{tr.items[1].desc}</div>
+              <div className="project-tech">
+                {['Kotlin','Jetpack Compose','Material 3'].map(t => <span key={t} className="tech-chip">{t}</span>)}
+              </div>
+              <div className="project-links">
+                <a href="https://github.com/TallesGuerra/ListaDeTarefas" target="_blank" rel="noreferrer" className="project-link">
+                  <GitHubIcon /> {tr.githubShort}
+                </a>
+              </div>
             </div>
           </div>
         </div>
+
       </div>
     </section>
   )
