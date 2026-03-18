@@ -7,7 +7,7 @@ const translations = {
       contact: 'Contacto',
     },
     hero: {
-      eyebrow: 'Disponível para oportunidades · Portugal',
+      eyebrow: 'Disponível para oportunidades · Remoto & Portugal',
       h1Line1: 'Dev Mobile',
       h1Line2: 'Android que',
       h1Line3: 'entrega.',
@@ -118,7 +118,7 @@ const translations = {
       contact: 'Contact',
     },
     hero: {
-      eyebrow: 'Available for opportunities · Portugal',
+      eyebrow: 'Available for opportunities · Remote & Portugal',
       h1Line1: 'Mobile',
       h1Line2: 'Android Dev',
       h1Line3: 'that delivers.',

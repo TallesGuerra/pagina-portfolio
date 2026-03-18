@@ -25,7 +25,6 @@ const skillTags = [
     { label: 'Android Studio' },
     { label: 'Git / GitHub' },
     { label: 'Scrum' },
-    { label: 'Claude Code', highlight: true },
   ],
 ]
 
