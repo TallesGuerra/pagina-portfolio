@@ -11,7 +11,7 @@ const translations = {
       h1Line1: 'Dev Mobile',
       h1Line2: 'Android que',
       h1Line3: 'entrega.',
-      desc: 'Olá, sou <strong>Talles Guerra</strong> — construo apps Android nativos com Kotlin e Jetpack Compose. Código limpo, arquitetura sólida, resultados reais.',
+      desc: 'Construo apps Android nativos com <strong>Kotlin</strong> e <strong>Jetpack Compose</strong> — de finanças pessoais a sistemas de agendamento em produção. Arquitectura sólida, código que outro dev consegue ler.',
       cta: 'Ver projetos',
       ctaGhost: 'Entrar em contacto',
       statProjects: 'Projetos',
@@ -40,6 +40,7 @@ const translations = {
       titleEm: 'construí',
       badge: '★ Projeto destaque',
       badgeCase: '◆ Estudo de caso',
+      badgeClient: '◆ Cliente real',
       githubBtn: 'Ver no GitHub',
       liveBtn: 'Ver online',
       githubShort: 'GitHub',
@@ -50,7 +51,7 @@ const translations = {
         },
         {
           name: 'Lista de Tarefas',
-          desc: 'App de gestão de tarefas com Compose. Estado reativo, adicionar e remover tarefas com layout responsivo.',
+          desc: 'CRUD completo em Compose puro. Estado reativo via remember, listagem dinâmica com Material 3 — sem uma linha de XML.',
         },
         {
           name: 'Barber Shop',
@@ -58,7 +59,15 @@ const translations = {
         },
         {
           name: 'Quiz App',
-          desc: 'Quiz Android com Compose. Interface dinâmica com feedback visual, background customizado e navegação entre telas.',
+          desc: 'Quiz Android com Compose. Interface dinâmica com feedback visual, background customizado e navegação entre ecrãs.',
+        },
+        {
+          name: 'Github Search',
+          desc: 'App Android que consome a GitHub REST API via Retrofit. Pesquisa perfis, lista repositórios públicos e persiste o último utilizador localmente.',
+        },
+        {
+          name: 'EletricCar App',
+          desc: 'Catálogo de veículos elétricos com specs detalhadas. Compose com navegação multi-ecrã, light/dark theme e layout responsivo.',
         },
       ],
     },
@@ -122,7 +131,7 @@ const translations = {
       h1Line1: 'Mobile',
       h1Line2: 'Android Dev',
       h1Line3: 'that delivers.',
-      desc: 'Hi, I\'m <strong>Talles Guerra</strong> — I build native Android apps with Kotlin and Jetpack Compose. Clean code, solid architecture, real results.',
+      desc: 'I build native Android apps with <strong>Kotlin</strong> and <strong>Jetpack Compose</strong> — from personal finance to live booking systems. Solid architecture, code another dev can read tomorrow.',
       cta: 'See projects',
       ctaGhost: 'Get in touch',
       statProjects: 'Projects',
@@ -151,6 +160,7 @@ const translations = {
       titleEm: 'built',
       badge: '★ Featured project',
       badgeCase: '◆ Case study',
+      badgeClient: '◆ Real client',
       githubBtn: 'View on GitHub',
       liveBtn: 'View live',
       githubShort: 'GitHub',
@@ -161,7 +171,7 @@ const translations = {
         },
         {
           name: 'To-Do List',
-          desc: 'Task management app with Compose. Reactive state, add and remove tasks with a responsive layout.',
+          desc: 'Full CRUD in pure Compose. Reactive state via remember, dynamic list with Material 3 — no XML whatsoever.',
         },
         {
           name: 'Barber Shop',
@@ -169,7 +179,15 @@ const translations = {
         },
         {
           name: 'Quiz App',
-          desc: 'Android quiz with Compose. Dynamic interface with visual feedback, custom background and screen navigation.',
+          desc: 'Android quiz with Compose. Dynamic interface with visual feedback, custom background and multi-screen navigation.',
+        },
+        {
+          name: 'Github Search',
+          desc: 'Android app consuming the GitHub REST API via Retrofit. Search profiles, list public repositories and persist the last searched user locally.',
+        },
+        {
+          name: 'EletricCar App',
+          desc: 'Electric vehicle catalogue with detailed specs. Compose with multi-screen navigation, light/dark theme and responsive layout.',
         },
       ],
     },

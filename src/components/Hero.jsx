@@ -7,6 +7,10 @@ export default function Hero({ lang }) {
     <section id="hero">
       <div className="hero-bg-shape" />
       <div className="hero-bg-dots" />
+      <div className="hero-stacked-bg" aria-hidden="true">
+        <span>Talles</span>
+        <span>Guerra</span>
+      </div>
       <div>
         <div className="hero-eyebrow">
           <span className="hero-eyebrow-dot" />
@@ -32,7 +36,7 @@ export default function Hero({ lang }) {
         <div className="avatar-card">
           <div className="avatar-top">
             <div className="avatar-img">
-              <img src={`${import.meta.env.BASE_URL}perfilGithub.png`} alt="Talles Guerra" style={{ width: '88px', height: '88px', objectFit: 'cover', borderRadius: '50%' }} />
+              <img src={`${import.meta.env.BASE_URL}perfilGithub.png`} alt="Talles Guerra" style={{ width: '130px', height: '130px', objectFit: 'cover', borderRadius: '50%' }} />
             </div>
             <div className="avatar-name">Talles Guerra</div>
             <div className="avatar-role">Android Dev · Kotlin · Compose</div>

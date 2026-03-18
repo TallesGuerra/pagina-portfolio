@@ -57,7 +57,7 @@ export default function Projects({ lang }) {
         {/* 02 — Barber Shop: full row */}
         <div className="project-featured project-featured-barber reveal">
           <div className="project-featured-body">
-            <div className="project-badge badge-case">{tr.badgeCase}</div>
+            <div className="project-badge badge-client">{tr.badgeClient}</div>
             <div className="project-num">02 ——</div>
             <div className="project-name" style={{ fontFamily: "'Fraunces',serif", fontSize: '1.55rem', marginBottom: '.7rem' }}>
               {tr.items[2].name}
@@ -85,7 +85,7 @@ export default function Projects({ lang }) {
           </div>
         </div>
 
-        {/* 03 & 04 — Quiz + ToDoList: 2 colunas com phone-mockup */}
+        {/* 03 & 04 — Quiz + ToDoList */}
         <div className="projects-duo reveal">
           {/* Quiz App */}
           <div className="project-duo-card">
@@ -135,6 +135,61 @@ export default function Projects({ lang }) {
               </div>
               <div className="project-links">
                 <a href="https://github.com/TallesGuerra/ListaDeTarefas" target="_blank" rel="noreferrer" className="project-link">
+                  <GitHubIcon /> {tr.githubShort}
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* 05 & 06 — Github Search + EletricCar */}
+        <div className="projects-duo projects-duo-bottom reveal">
+          {/* Github Search */}
+          <div className="project-duo-card">
+            <div style={{ width: '100%' }}>
+              <div className="project-num">05 ——</div>
+              <div className="project-name">{tr.items[4].name}</div>
+            </div>
+            <div className="project-duo-preview">
+              <div className="project-duo-icon-preview project-duo-icon-blue">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" width="48" height="48" opacity=".5">
+                  <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                </svg>
+              </div>
+            </div>
+            <div style={{ width: '100%' }}>
+              <div className="project-desc">{tr.items[4].desc}</div>
+              <div className="project-tech">
+                {['Kotlin','Retrofit','Coroutines','GitHub API','SharedPreferences'].map(t => <span key={t} className="tech-chip">{t}</span>)}
+              </div>
+              <div className="project-links">
+                <a href="https://github.com/TallesGuerra/Github-search" target="_blank" rel="noreferrer" className="project-link">
+                  <GitHubIcon /> {tr.githubShort}
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* EletricCar App */}
+          <div className="project-duo-card">
+            <div style={{ width: '100%' }}>
+              <div className="project-num">06 ——</div>
+              <div className="project-name">{tr.items[5].name}</div>
+            </div>
+            <div className="project-duo-preview">
+              <div className="project-duo-icon-preview project-duo-icon-green">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" width="48" height="48" opacity=".5">
+                  <path d="M5 17H3a2 2 0 01-2-2V9a2 2 0 012-2h11l4 4v4a2 2 0 01-2 2H5z"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/><path d="M13 7V3H7v4"/>
+                </svg>
+              </div>
+            </div>
+            <div style={{ width: '100%' }}>
+              <div className="project-desc">{tr.items[5].desc}</div>
+              <div className="project-tech">
+                {['Kotlin','Jetpack Compose','Navigation','Material 3'].map(t => <span key={t} className="tech-chip">{t}</span>)}
+              </div>
+              <div className="project-links">
+                <a href="https://github.com/TallesGuerra/EletricCar_App" target="_blank" rel="noreferrer" className="project-link">
                   <GitHubIcon /> {tr.githubShort}
                 </a>
               </div>
