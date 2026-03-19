@@ -171,6 +171,7 @@ section { padding: 6rem 3rem; }
 .badge-featured { background: rgba(232,68,10,.07); border: 1px solid rgba(232,68,10,.2); color: var(--accent); }
 .badge-client { background: rgba(37,99,235,.07); border: 1px solid rgba(37,99,235,.2); color: var(--accent2); }
 .badge-case { background: rgba(100,100,100,.07); border: 1px solid rgba(100,100,100,.2); color: var(--ink2); }
+.badge-wip { background: rgba(234,179,8,.1); border: 1px solid rgba(234,179,8,.35); color: #b45309; }
 .project-links { display: flex; gap: 1rem; }
 .project-link { font-family: var(--mono); font-size: .67rem; color: var(--ink2); text-decoration: none; letter-spacing: .08em; text-transform: uppercase; display: flex; align-items: center; gap: .35rem; border-bottom: 1px solid var(--border); padding-bottom: 2px; transition: color .2s, border-color .2s; }
 .project-link:hover { color: var(--accent); border-color: var(--accent); }
