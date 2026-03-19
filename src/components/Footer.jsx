@@ -6,7 +6,6 @@ export default function Footer({ lang }) {
   return (
     <footer>
       <p>© 2026 <a href="#">Talles Guerra</a> — {tr.tagline}</p>
-      <p dangerouslySetInnerHTML={{ __html: tr.made }} />
     </footer>
   )
 }

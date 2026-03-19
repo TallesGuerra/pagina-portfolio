@@ -116,7 +116,6 @@ const translations = {
     },
     footer: {
       tagline: 'Dev Mobile Android · Lisboa, Portugal',
-      made: 'Feito com Kotlin no coração & <a href="https://github.com/TallesGuerra">código aberto</a>',
     },
   },
 
@@ -237,7 +236,6 @@ const translations = {
     },
     footer: {
       tagline: 'Mobile Android Dev · Lisbon, Portugal',
-      made: 'Made with Kotlin at heart & <a href="https://github.com/TallesGuerra">open source</a>',
     },
   },
 }
