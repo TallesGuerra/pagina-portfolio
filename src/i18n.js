@@ -41,6 +41,7 @@ const translations = {
       badge: '★ Projeto destaque',
       badgeCase: '◆ Estudo de caso',
       badgeClient: '◆ Cliente real',
+      badgeWip: '⚙ Em construção',
       githubBtn: 'Ver no GitHub',
       liveBtn: 'Ver online',
       githubShort: 'GitHub',
@@ -58,7 +59,7 @@ const translations = {
           desc: 'Sistema de agendamento para cliente real em Portugal com integração ao Google Calendar e design mobile-first.',
         },
         {
-          name: 'Quiz App',
+          name: 'Dev Quiz',
           desc: 'Quiz Android com Compose. Interface dinâmica com feedback visual, background customizado e navegação entre ecrãs.',
         },
         {
@@ -161,6 +162,7 @@ const translations = {
       badge: '★ Featured project',
       badgeCase: '◆ Case study',
       badgeClient: '◆ Real client',
+      badgeWip: '⚙ Work in progress',
       githubBtn: 'View on GitHub',
       liveBtn: 'View live',
       githubShort: 'GitHub',
@@ -178,7 +180,7 @@ const translations = {
           desc: 'Booking system for a real client in Portugal with Google Calendar integration and mobile-first design.',
         },
         {
-          name: 'Quiz App',
+          name: 'Dev Quiz',
           desc: 'Android quiz with Compose. Dynamic interface with visual feedback, custom background and multi-screen navigation.',
         },
         {

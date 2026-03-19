@@ -143,6 +143,7 @@ export default function Projects({ lang }) {
           {/* Quiz App */}
           <div className="project-duo-card">
             <div style={{ width: "100%" }}>
+              <div className="project-badge badge-wip">{tr.badgeWip}</div>
               <div className="project-num">03 ——</div>
               <div className="project-name">{tr.items[3].name}</div>
             </div>
