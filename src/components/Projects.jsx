@@ -223,20 +223,12 @@ export default function Projects({ lang }) {
               <div className="project-name">{tr.items[4].name}</div>
             </div>
             <div className="project-duo-preview">
-              <div className="project-duo-icon-preview project-duo-icon-blue">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                  width="48"
-                  height="48"
-                  opacity=".5"
-                >
-                  <circle cx="11" cy="11" r="8" />
-                  <line x1="21" y1="21" x2="16.65" y2="16.65" />
-                </svg>
-              </div>
+              <img
+                src={`${import.meta.env.BASE_URL}github-search-preview.svg`}
+                alt="Github Search preview"
+                className="phone-mockup"
+                style={{ width: "130px" }}
+              />
             </div>
             <div style={{ width: "100%" }}>
               <div className="project-desc">{tr.items[4].desc}</div>
@@ -273,22 +265,12 @@ export default function Projects({ lang }) {
               <div className="project-name">{tr.items[5].name}</div>
             </div>
             <div className="project-duo-preview">
-              <div className="project-duo-icon-preview project-duo-icon-green">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                  width="48"
-                  height="48"
-                  opacity=".5"
-                >
-                  <path d="M5 17H3a2 2 0 01-2-2V9a2 2 0 012-2h11l4 4v4a2 2 0 01-2 2H5z" />
-                  <circle cx="7" cy="17" r="2" />
-                  <circle cx="17" cy="17" r="2" />
-                  <path d="M13 7V3H7v4" />
-                </svg>
-              </div>
+              <img
+                src={`${import.meta.env.BASE_URL}eletriccar-preview.svg`}
+                alt="EletricCar App preview"
+                className="phone-mockup"
+                style={{ width: "130px" }}
+              />
             </div>
             <div style={{ width: "100%" }}>
               <div className="project-desc">{tr.items[5].desc}</div>
