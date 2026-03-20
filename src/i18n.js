@@ -26,6 +26,7 @@ const translations = {
       p1: 'Sou o <strong>Talles Guerra</strong>, desenvolvedor mobile Android baseado em Portugal. O meu foco é o ecossistema <strong>Kotlin + Jetpack Compose</strong>, com arquitetura limpa e código que escala.',
       p2: 'Já entreguei apps funcionais com <strong>MVVM, Clean Architecture e Room Database</strong>, e o meu primeiro projeto freelance — um sistema de agendamento para uma barbearia em Portugal — está em produção.',
       p3: 'Atualmente integro o time da <strong>Pipoca Ágil</strong>, onde aplico Scrum num projeto colaborativo e aprendo como equipas de produto reais funcionam.',
+      p4: 'A minha base é fullstack — Javascript, Angular, React, Node.js. Hoje foco em Android nativo com Kotlin e Jetpack Compose, e essa visão do backend permite-me construir apps que se integram de forma limpa com qualquer API.',
       quote: '"Código bom não é só o que funciona — é o que outro dev consegue entender amanhã."',
       skillCats: [
         { name: 'Core Android' },
@@ -56,7 +57,7 @@ const translations = {
         },
         {
           name: 'Barber Shop',
-          desc: 'Sistema de agendamento para cliente real em Portugal com integração ao Google Calendar e design mobile-first.',
+          desc: 'Aplicação fullstack para agendamento de barbearia. Frontend em React + Vite, backend em Express para autenticação OAuth, integrado com Google Calendar API para verificação de disponibilidade e criação de eventos em tempo real. Projeto completo em produção.',
         },
         {
           name: 'Dev Quiz',
@@ -146,6 +147,7 @@ const translations = {
       p1: 'I\'m <strong>Talles Guerra</strong>, an Android mobile developer based in Portugal. My focus is the <strong>Kotlin + Jetpack Compose</strong> ecosystem, with clean architecture and scalable code.',
       p2: 'I\'ve shipped functional apps with <strong>MVVM, Clean Architecture and Room Database</strong>, and my first freelance project — a booking system for a barbershop in Portugal — is live in production.',
       p3: 'I\'m currently part of the <strong>Pipoca Ágil</strong> team, applying Scrum in a collaborative project and learning how real product teams operate.',
+      p4: 'My background is fullstack — Javascript, Angular, React, Node.js. Today I focus on native Android with Kotlin and Jetpack Compose, and this backend perspective allows me to build apps that integrate cleanly with any API.',
       quote: '"Good code isn\'t just code that works — it\'s code another dev can understand tomorrow."',
       skillCats: [
         { name: 'Core Android' },
@@ -176,7 +178,7 @@ const translations = {
         },
         {
           name: 'Barber Shop',
-          desc: 'Booking system for a real client in Portugal with Google Calendar integration and mobile-first design.',
+          desc: 'Fullstack booking application for a barbershop. Frontend in React + Vite, Express backend for OAuth authentication, integrated with Google Calendar API for real-time availability checks and event creation. Complete project in production.',
         },
         {
           name: 'Dev Quiz',

@@ -44,6 +44,7 @@ export default function About({ lang }) {
               <p dangerouslySetInnerHTML={{ __html: tr.p1 }} />
               <p dangerouslySetInnerHTML={{ __html: tr.p2 }} />
               <p dangerouslySetInnerHTML={{ __html: tr.p3 }} />
+              <p dangerouslySetInnerHTML={{ __html: tr.p4 }} />
             </div>
             <div className="about-philosophy">
               <p>{tr.quote}</p>
