@@ -5,6 +5,8 @@ Developer com background fullstack em transição para Mobile Android, especiali
 
 **[🔗 Ver online](https://tallesguerra.github.io/pagina-portfolio)** <!-- substitui pelo teu URL real -->
 
+![Portfolio Screenshot](./public/screenshot.jpg)
+
 ---
 
 ## Sobre
