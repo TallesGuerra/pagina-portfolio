@@ -9,8 +9,8 @@ const translations = {
     hero: {
       eyebrow: 'Disponível para oportunidades · Remoto & Portugal',
       h1Line1: 'Dev Mobile',
-      h1Line2: 'Android que',
-      h1Line3: 'entrega.',
+      h1Line2: 'Android +',
+      h1Line3: 'Fullstack.',
       desc: 'Construo apps Android nativos com <strong>Kotlin</strong> e <strong>Jetpack Compose</strong> — de finanças pessoais a sistemas de agendamento em produção. Arquitectura sólida, código que outro dev consegue ler.',
       cta: 'Ver projetos',
       ctaGhost: 'Entrar em contacto',
@@ -130,8 +130,8 @@ const translations = {
     hero: {
       eyebrow: 'Available for opportunities · Remote & Portugal',
       h1Line1: 'Mobile',
-      h1Line2: 'Android Dev',
-      h1Line3: 'that delivers.',
+      h1Line2: 'Android +',
+      h1Line3: 'Fullstack.',
       desc: 'I build native Android apps with <strong>Kotlin</strong> and <strong>Jetpack Compose</strong> — from personal finance to live booking systems. Solid architecture, code another dev can read tomorrow.',
       cta: 'See projects',
       ctaGhost: 'Get in touch',
