@@ -67,6 +67,7 @@ nav.scrolled { background: rgba(28,25,22,.93); backdrop-filter: blur(20px); bord
 .hero-eyebrow-dot { width: 6px; height: 6px; background: var(--accent3); border-radius: 50%; animation: blink 2s infinite; }
 h1.hero-h1 { font-family: var(--serif); font-size: clamp(3rem,5.5vw,5.5rem); font-weight: 900; line-height: 1.0; letter-spacing: -.03em; opacity: 0; animation: fadeUp .7s .25s forwards; }
 h1.hero-h1 em { font-style: italic; font-weight: 300; color: var(--muted); }
+h1.hero-h1 .hero-plus { color: var(--accent); font-style: normal; }
 .ul { position: relative; }
 .ul::after { content: ''; position: absolute; bottom: 3px; left: 0; right: 0; height: 4px; background: var(--accent); opacity: .45; }
 .hero-desc { margin-top: 1.75rem; font-size: 1rem; color: var(--muted); line-height: 1.75; max-width: 440px; opacity: 0; animation: fadeUp .7s .4s forwards; }
