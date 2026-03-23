@@ -18,7 +18,7 @@ export default function Hero({ lang }) {
         </div>
         <h1 className="hero-h1">
           {tr.h1Line1}<br />
-          <em>{tr.h1Line2}</em><br />
+          <em>{tr.h1Line2.split('+')[0]}<span className="hero-plus">+</span></em><br />
           <span className="ul">{tr.h1Line3}</span>
         </h1>
         <p className="hero-desc" dangerouslySetInnerHTML={{ __html: tr.desc }} />
