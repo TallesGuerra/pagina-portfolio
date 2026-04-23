@@ -258,7 +258,7 @@ export default function Projects({ lang }) {
             </div>
           </div>
 
-          {/* EletricCar App */}
+          {/* TaskHabit */}
           <div className="project-duo-card">
             <div style={{ width: "100%" }}>
               <div className="project-num">06 ——</div>
@@ -266,8 +266,8 @@ export default function Projects({ lang }) {
             </div>
             <div className="project-duo-preview">
               <img
-                src={`${import.meta.env.BASE_URL}eletriccar-preview.svg`}
-                alt="EletricCar App preview"
+                src={`${import.meta.env.BASE_URL}taskhabit-preview.svg`}
+                alt="TaskHabit preview"
                 className="phone-mockup"
                 style={{ width: "130px" }}
               />
@@ -275,7 +275,7 @@ export default function Projects({ lang }) {
             <div style={{ width: "100%" }}>
               <div className="project-desc">{tr.items[5].desc}</div>
               <div className="project-tech">
-                {["Kotlin", "Jetpack Compose", "Navigation", "Material 3"].map(
+                {["Kotlin", "Jetpack Compose", "MVVM", "Hilt", "Room", "WorkManager"].map(
                   (t) => (
                     <span key={t} className="tech-chip">
                       {t}
@@ -285,7 +285,7 @@ export default function Projects({ lang }) {
               </div>
               <div className="project-links">
                 <a
-                  href="https://github.com/TallesGuerra/EletricCar_App"
+                  href="https://github.com/TallesGuerra/TaskHabit"
                   target="_blank"
                   rel="noreferrer"
                   className="project-link"

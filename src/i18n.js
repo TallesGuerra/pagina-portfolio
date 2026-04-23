@@ -68,8 +68,8 @@ const translations = {
           desc: 'App Android que consome a GitHub REST API via Retrofit. Pesquisa perfis, lista repositórios públicos e persiste o último utilizador localmente.',
         },
         {
-          name: 'EletricCar App',
-          desc: 'Catálogo de veículos elétricos com specs detalhadas. Compose com navegação multi-ecrã, light/dark theme e layout responsivo.',
+          name: 'TaskHabit',
+          desc: 'Habit tracker Android com streak tracking, categorias e reset diário automático via WorkManager. Arquitetura MVVM + Hilt + Room — bilingue (PT/EN).',
         },
       ],
     },
@@ -189,8 +189,8 @@ const translations = {
           desc: 'Android app consuming the GitHub REST API via Retrofit. Search profiles, list public repositories and persist the last searched user locally.',
         },
         {
-          name: 'EletricCar App',
-          desc: 'Electric vehicle catalogue with detailed specs. Compose with multi-screen navigation, light/dark theme and responsive layout.',
+          name: 'TaskHabit',
+          desc: 'Android habit tracker with streak tracking, categories and automatic daily reset via WorkManager. MVVM + Hilt + Room — bilingual (PT/EN).',
         },
       ],
     },
