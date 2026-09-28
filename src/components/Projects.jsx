@@ -63,7 +63,7 @@ export default function Projects({ lang }) {
             </div>
             <div className="project-links">
               <a
-                href="https://github.com/TallesGuerra"
+                href="hhttps://github.com/TallesGuerra/PocketFinance"
                 target="_blank"
                 rel="noreferrer"
                 className="project-link"
