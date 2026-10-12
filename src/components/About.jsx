@@ -34,9 +34,11 @@ export default function About({ lang }) {
   return (
     <section id="about">
       <div className="container">
-        <div className="section-label"><span>01</span> · {tr.label}</div>
+        <div className="section-label">
+          <span className="lbl-comment">// 01_</span>{tr.label}
+        </div>
         <h2 className="section-title reveal">
-          {tr.title1}<br />{tr.title2}<em>{tr.titleEm}</em>
+          {tr.title1}{tr.title2 ? <><br />{tr.title2}</> : null}<em>{tr.titleEm}</em>
         </h2>
         <div className="about-grid">
           <div className="reveal">

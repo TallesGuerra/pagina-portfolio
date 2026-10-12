@@ -17,7 +17,11 @@ export default function Navbar({ lang, toggleLang }) {
   return (
     <>
       <nav id="navbar" className={scrolled ? 'scrolled' : ''}>
-        <a href="#hero" className="nav-logo"><span className="logo-light">Talles</span><span className="logo-guerra">Guerra</span></a>
+        <a href="#hero" className="nav-logo">
+          <span className="logo-tg">TG</span>
+          <span className="logo-sep"> // </span>
+          <span className="logo-role">Android Eng</span>
+        </a>
         <ul className="nav-links">
           <li><a href="#about">{tr.about}</a></li>
           <li><a href="#projects">{tr.projects}</a></li>
@@ -25,11 +29,11 @@ export default function Navbar({ lang, toggleLang }) {
           <li><a href="#contact">{tr.contact}</a></li>
         </ul>
         <div className="nav-right">
-          <button
-            className="lang-toggle"
-            onClick={toggleLang}
-            aria-label="Toggle language"
-          >
+          <div className="nav-status">
+            <span className="nav-status-dot" />
+            STATUS: OPEN
+          </div>
+          <button className="lang-toggle" onClick={toggleLang} aria-label="Toggle language">
             {lang === 'pt' ? 'EN' : 'PT'}
           </button>
           <button
