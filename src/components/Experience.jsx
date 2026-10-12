@@ -8,7 +8,9 @@ export default function Experience({ lang }) {
   return (
     <section id="experience">
       <div className="container">
-        <div className="section-label"><span>03</span> · {tr.label}</div>
+        <div className="section-label">
+          <span className="lbl-comment">// 03_</span>{tr.label}
+        </div>
         <h2 className="section-title reveal">{tr.title1}<em>{tr.titleEm}</em></h2>
         <div className="timeline reveal">
           {tr.items.map((item, i) => (
