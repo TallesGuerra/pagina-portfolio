@@ -79,16 +79,22 @@ const translations = {
       titleEm: 'trajetória',
       items: [
         {
-          role: 'Developer Voluntário',
-          company: 'Pipoca Ágil',
-          desc: 'Projeto colaborativo onde aplico Scrum na prática. Sprints reais, cerimônias ágeis e entrega de valor num time multidisciplinar.',
-          tags: ['Scrum', 'Android Dev', 'Kotlin', 'Trabalho em equipe'],
+          role: 'Android Software Developer',
+          company: 'Escola Nova Era Tech · Tempo integral',
+          desc: 'Desenvolvimento de apps nativas com Kotlin em ambiente Agile (Scrum). Interfaces declarativas com Jetpack Compose, arquitetura MVVM, consumo de APIs REST com Retrofit, persistência local com Room e lógica assíncrona com Coroutines. Integração com Firebase e cobertura com testes unitários. Colaboração diária com equipas de Backend, iOS e UI/UX.',
+          tags: ['Kotlin', 'Jetpack Compose', 'MVVM', 'Retrofit', 'Room', 'Coroutines', 'Firebase', 'Unit Testing', 'Scrum'],
+        },
+        {
+          role: 'Full-Stack Developer',
+          company: 'Pipoca Ágil · Estágio',
+          desc: 'Projeto voluntário colaborativo com metodologia Scrum num time multidisciplinar. Desenvolvimento de MVPs em diferentes domínios — front-end com Angular e back-end com Java Spring Boot.',
+          tags: ['Angular', 'Java', 'Spring Boot', 'Scrum', 'Web Dev'],
         },
         {
           role: 'Freelance Developer',
           company: 'Barbearia Cruz · Portugal',
-          desc: 'Primeiro projeto para cliente real. Da proposta comercial ao deploy, com integração Google Calendar e suporte pós-lançamento.',
-          tags: ['JavaScript', 'Google Calendar API', 'Vercel', 'Freelance'],
+          desc: 'Primeiro projeto para cliente real. Da proposta comercial ao deploy: sistema de agendamento com integração Google Calendar, autenticação OAuth e suporte pós-lançamento.',
+          tags: ['React', 'Express', 'Google Calendar API', 'Vercel', 'Freelance'],
         },
         {
           role: 'Desenvolvimento Pessoal',
@@ -200,16 +206,22 @@ const translations = {
       titleEm: 'journey',
       items: [
         {
-          role: 'Volunteer Developer',
-          company: 'Pipoca Ágil',
-          desc: 'Collaborative project where I apply Scrum in practice. Real sprints, agile ceremonies and value delivery in a multidisciplinary team.',
-          tags: ['Scrum', 'Android Dev', 'Kotlin', 'Teamwork'],
+          role: 'Android Software Developer',
+          company: 'Escola Nova Era Tech · Full-time',
+          desc: 'Native app development with Kotlin in an Agile (Scrum) environment. Declarative UIs with Jetpack Compose, MVVM architecture, REST API consumption with Retrofit, local persistence with Room and async logic with Coroutines. Firebase integration and unit test coverage. Daily collaboration with Backend, iOS and UI/UX teams.',
+          tags: ['Kotlin', 'Jetpack Compose', 'MVVM', 'Retrofit', 'Room', 'Coroutines', 'Firebase', 'Unit Testing', 'Scrum'],
+        },
+        {
+          role: 'Full-Stack Developer',
+          company: 'Pipoca Ágil · Internship',
+          desc: 'Voluntary collaborative project using Scrum in a multidisciplinary team. Developed MVPs across different business domains — frontend with Angular and backend with Java Spring Boot.',
+          tags: ['Angular', 'Java', 'Spring Boot', 'Scrum', 'Web Dev'],
         },
         {
           role: 'Freelance Developer',
           company: 'Barbearia Cruz · Portugal',
-          desc: 'First real-client project. From commercial proposal to deployment, with Google Calendar integration and post-launch support.',
-          tags: ['JavaScript', 'Google Calendar API', 'Vercel', 'Freelance'],
+          desc: 'First real-client project. From commercial proposal to deployment: booking system with Google Calendar integration, OAuth authentication and post-launch support.',
+          tags: ['React', 'Express', 'Google Calendar API', 'Vercel', 'Freelance'],
         },
         {
           role: 'Self-directed Learning',
