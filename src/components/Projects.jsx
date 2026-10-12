@@ -27,7 +27,7 @@ export default function Projects({ lang }) {
           {tr.title}<em>{tr.titleEm}</em>
         </h2>
 
-        {/* 01 — Pocket Finance: full row featured */}
+        {/* 01 — Pocket Finances: featured */}
         <div className="project-featured reveal">
           <div className="project-featured-body">
             <div className="project-badge badge-featured">{tr.badge}</div>
@@ -59,10 +59,42 @@ export default function Projects({ lang }) {
           </div>
         </div>
 
-        {/* 02 — Barber Shop: full row */}
+        {/* 02 — TaskHabit: featured (promoted) */}
         <div className="project-featured project-featured-barber reveal">
           <div className="project-featured-body">
             <div className="project-num">02 ——</div>
+            <div className="project-name" style={{ fontSize: '1.3rem', marginBottom: '.6rem' }}>
+              {tr.items[5].name}
+            </div>
+            <div className="project-desc" style={{ maxWidth: 400 }}>
+              {tr.items[5].desc}
+            </div>
+            <div className="project-tech" style={{ marginBottom: '1.25rem' }}>
+              {['Kotlin', 'Jetpack Compose', 'MVVM', 'Hilt', 'Room', 'WorkManager', 'Coroutines'].map((t) => (
+                <span key={t} className="tech-chip">{t}</span>
+              ))}
+            </div>
+            <div className="project-links">
+              <a href="https://github.com/TallesGuerra/TaskHabit" target="_blank" rel="noreferrer" className="project-link">
+                <GitHubIcon /> {tr.githubBtn}
+              </a>
+            </div>
+          </div>
+          <div className="project-featured-preview" style={{ background: 'linear-gradient(135deg, #0d1a12 0%, #0f1a2a 100%)' }}>
+            <img
+              src={`${import.meta.env.BASE_URL}taskhabit-preview.svg`}
+              alt="TaskHabit preview"
+              className="phone-mockup"
+              style={{ width: '150px', height: 'auto' }}
+            />
+          </div>
+        </div>
+
+        {/* 03 — Barber Shop: full row */}
+        <div className="project-featured project-featured-barber reveal" style={{ borderTop: 'none', borderRadius: 0 }}>
+          <div className="project-featured-body">
+            <div className="project-badge badge-client">{tr.badgeClient}</div>
+            <div className="project-num">03 ——</div>
             <div className="project-name" style={{ fontSize: '1.3rem', marginBottom: '.6rem' }}>
               {tr.items[2].name}
             </div>
@@ -89,71 +121,11 @@ export default function Projects({ lang }) {
           </div>
         </div>
 
-        {/* 03 & 04 — Quiz + ToDoList */}
-        <div className="projects-duo reveal">
-          <div className="project-duo-card">
-            <div style={{ width: '100%' }}>
-              <div className="project-badge badge-wip">{tr.badgeWip}</div>
-              <div className="project-num">03 ——</div>
-              <div className="project-name">{tr.items[3].name}</div>
-            </div>
-            <div className="project-duo-preview">
-              <img
-                src={`${import.meta.env.BASE_URL}quiz-phone.svg`}
-                alt="Quiz App preview"
-                className="phone-mockup"
-                style={{ width: '120px' }}
-              />
-            </div>
-            <div style={{ width: '100%' }}>
-              <div className="project-desc">{tr.items[3].desc}</div>
-              <div className="project-tech">
-                {['Kotlin', 'Jetpack Compose', 'Android SDK'].map((t) => (
-                  <span key={t} className="tech-chip">{t}</span>
-                ))}
-              </div>
-              <div className="project-links">
-                <a href="https://github.com/TallesGuerra/DevQuiz" target="_blank" rel="noreferrer" className="project-link">
-                  <GitHubIcon /> {tr.githubShort}
-                </a>
-              </div>
-            </div>
-          </div>
-
+        {/* 04 & 05 — Github Search + Dev Quiz */}
+        <div className="projects-duo reveal" style={{ borderRadius: '0 0 6px 6px' }}>
           <div className="project-duo-card">
             <div style={{ width: '100%' }}>
               <div className="project-num">04 ——</div>
-              <div className="project-name">{tr.items[1].name}</div>
-            </div>
-            <div className="project-duo-preview">
-              <img
-                src={`${import.meta.env.BASE_URL}todolist-phone.svg`}
-                alt="To-Do List preview"
-                className="phone-mockup"
-                style={{ width: '120px' }}
-              />
-            </div>
-            <div style={{ width: '100%' }}>
-              <div className="project-desc">{tr.items[1].desc}</div>
-              <div className="project-tech">
-                {['Kotlin', 'Jetpack Compose', 'Material 3'].map((t) => (
-                  <span key={t} className="tech-chip">{t}</span>
-                ))}
-              </div>
-              <div className="project-links">
-                <a href="https://github.com/TallesGuerra/ListaDeTarefas" target="_blank" rel="noreferrer" className="project-link">
-                  <GitHubIcon /> {tr.githubShort}
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* 05 & 06 — Github Search + TaskHabit */}
-        <div className="projects-duo projects-duo-bottom reveal">
-          <div className="project-duo-card">
-            <div style={{ width: '100%' }}>
-              <div className="project-num">05 ——</div>
               <div className="project-name">{tr.items[4].name}</div>
             </div>
             <div className="project-duo-preview">
@@ -181,26 +153,27 @@ export default function Projects({ lang }) {
 
           <div className="project-duo-card">
             <div style={{ width: '100%' }}>
-              <div className="project-num">06 ——</div>
-              <div className="project-name">{tr.items[5].name}</div>
+              <div className="project-badge badge-wip">{tr.badgeWip}</div>
+              <div className="project-num">05 ——</div>
+              <div className="project-name">{tr.items[3].name}</div>
             </div>
             <div className="project-duo-preview">
               <img
-                src={`${import.meta.env.BASE_URL}taskhabit-preview.svg`}
-                alt="TaskHabit preview"
+                src={`${import.meta.env.BASE_URL}quiz-phone.svg`}
+                alt="Quiz App preview"
                 className="phone-mockup"
                 style={{ width: '120px' }}
               />
             </div>
             <div style={{ width: '100%' }}>
-              <div className="project-desc">{tr.items[5].desc}</div>
+              <div className="project-desc">{tr.items[3].desc}</div>
               <div className="project-tech">
-                {['Kotlin', 'Jetpack Compose', 'MVVM', 'Hilt', 'Room', 'WorkManager'].map((t) => (
+                {['Kotlin', 'Jetpack Compose', 'Android SDK'].map((t) => (
                   <span key={t} className="tech-chip">{t}</span>
                 ))}
               </div>
               <div className="project-links">
-                <a href="https://github.com/TallesGuerra/TaskHabit" target="_blank" rel="noreferrer" className="project-link">
+                <a href="https://github.com/TallesGuerra/DevQuiz" target="_blank" rel="noreferrer" className="project-link">
                   <GitHubIcon /> {tr.githubShort}
                 </a>
               </div>

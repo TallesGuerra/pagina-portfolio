@@ -20,7 +20,7 @@ export default function Navbar({ lang, toggleLang }) {
         <a href="#hero" className="nav-logo">
           <span className="logo-tg">TG</span>
           <span className="logo-sep"> // </span>
-          <span className="logo-role">Android Eng</span>
+          <span className="logo-role">Dev Android</span>
         </a>
         <ul className="nav-links">
           <li><a href="#about">{tr.about}</a></li>

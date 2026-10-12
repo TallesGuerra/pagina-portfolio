@@ -1,6 +1,6 @@
 import t from '../i18n'
 
-const dates = ['2026\natual', '2025', '2024\n2025']
+const dates = ['2025\natual', '2026\natual', '2025', '2024\n2025']
 
 export default function Experience({ lang }) {
   const tr = t[lang].experience
